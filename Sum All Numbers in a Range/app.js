@@ -5,10 +5,12 @@
 
 function sumAll(arr) {
 	let count = 0;
-	for (let i = arr[0]; i <= arr[1]; i++) {
+	let sortArr = arr.sort((a, b) => a - b);
+	for (let i = sortArr[0]; i <= sortArr[1]; i++) {
 		count += i;
 	}
-	console.log(count);
+	return count;
+	// console.log(count);
 }
 
 sumAll([1, 4]);
